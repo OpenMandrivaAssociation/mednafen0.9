@@ -7,8 +7,6 @@ Release:		%mkrel 1
 Summary:	Multi-consoles Emulator
 License:	GPLv2+
 URL:		http://mednafen.sourceforge.net/
-Vendor:         Penguin Liberation Front
-Packager:       Zombie Ryushu <ryushu@zarb.org>
 Group:		Emulators
 Source0:	http://downloads.sourceforge.net/%{oname}/%{oname}-0.9.18-wip.tar.bz2
 Patch0:		mednafen-9.17.1-formatfix.patch
