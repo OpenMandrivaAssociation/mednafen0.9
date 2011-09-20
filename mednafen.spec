@@ -11,6 +11,7 @@ Vendor:         Penguin Liberation Front
 Packager:       Zombie Ryushu <ryushu@zarb.org>
 Group:		Emulators
 Source0:	http://downloads.sourceforge.net/%{oname}/%{oname}-0.9.18-wip.tar.bz2
+Patch0:		mednafen-9.17.1-formatfix.patch
 BuildRequires:	libcdio-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	SDL_net-devel
@@ -28,13 +29,23 @@ BuildRequires:	MesaGLU-devel
 BuildRoot:	%{_tmppath}/%{oname}-%{version}
 
 %description
-Mednafen emulates several consoles : NES, PC Engine, GB, GBA, Lynx.
-
-This package is in PLF because of Mandriva policy regarding emulators.
+Mednafen emulates several consoles :
+-Atari Lynx
+-GameBoy (Color)
+-GameBoy Advance
+-Neo Geo Pocket (Color)
+-NES
+-SNES
+-PC Engine (TurboGrafx 16)
+-PC-FX
+-Sega Master System & Game Gear
+-SuperGrafx
+-Virtual Boy
+-WonderSwan (Color)
 
 %prep
 %setup -q -n %{oname}
-# %patch0 -p1
+%patch0 -p1
 find ./src -type f -exec chmod 644 '{}' +
 find ./src -type d -exec chmod 755 '{}' +
 
