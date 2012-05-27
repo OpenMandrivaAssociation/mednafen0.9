@@ -43,7 +43,7 @@ Mednafen emulates several consoles :
 
 %prep
 %setup -q -n %{oname}
-%patch0 -p1
+# %patch0 -p1
 find ./src -type f -exec chmod 644 '{}' +
 find ./src -type d -exec chmod 755 '{}' +
 
