@@ -1,14 +1,14 @@
 %define Werror_cflags %nil
 %define oname mednafen
 Name:			mednafen0.9
-Version:		0.9.23pre1
+Version:		0.9.24pre1
 Release:		%mkrel 1
 
 Summary:	Multi-consoles Emulator
 License:	GPLv2+
 URL:		http://mednafen.sourceforge.net/
 Group:		Emulators
-Source0:	http://downloads.sourceforge.net/%{oname}/%{oname}-0.9.23-wip.tar.bz2
+Source0:	http://downloads.sourceforge.net/%{oname}/%{oname}-0.9.24-wip.tar.bz2
 Patch0:		mednafen-9.17.1-formatfix.patch
 BuildRequires:	libcdio-devel
 BuildRequires:	libvorbis-devel
