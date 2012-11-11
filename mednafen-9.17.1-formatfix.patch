@@ -1,0 +1,12 @@
+diff -urN mednafen/src/ngp/TLCS-900h/TLCS900h_disassemble.cpp mednafen-patched/src/ngp/TLCS-900h/TLCS900h_disassemble.cpp
+--- mednafen/src/ngp/TLCS-900h/TLCS900h_disassemble.cpp	2009-05-27 05:26:15.000000000 +1100
++++ mednafen-patched/src/ngp/TLCS-900h/TLCS900h_disassemble.cpp	2011-07-21 19:22:25.866482733 +1100
+@@ -209,7 +209,7 @@
+ 
+ 	if (size == 0 && first == 0xC7)
+ 	{
+-		sprintf(str_r, extra);
++		sprintf(str_r, "%s", extra);
+ 		return;
+ 	}
+ 
