@@ -6,7 +6,7 @@ Release:		%mkrel 1
 
 Summary:	Multi-consoles Emulator
 License:	GPLv2+
-URL:		http://mednafen.sourceforge.net/
+URL:		https://mednafen.sourceforge.net/
 Group:		Emulators
 Source0:	http://downloads.sourceforge.net/%{oname}/%{oname}-0.9.26-wip.tar.bz2
 Patch0:		mednafen-9.17.1-formatfix.patch
