@@ -10,6 +10,11 @@ URL:		https://mednafen.sourceforge.net/
 Group:		Emulators
 Source0:	http://downloads.sourceforge.net/%{oname}/%{oname}-0.9.26-wip.tar.bz2
 Patch0:		mednafen-9.17.1-formatfix.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libcdio-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	SDL_net-devel
